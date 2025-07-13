@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple Division For Young Students</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ef9278e3ac.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <input type="range" id="mySlider" min="10" max="100" value="20" />
+      <p id="range">Range: <span id="sliderValue">20</span></p>
+      <h1 id="header">Simple Division</h1>
+      <div id="question">
+        <h3 id="question1"></h3>
+        <h3 id="dash">÷</h3>
+        <h3 id="question2"></h3>
+      </div>
+      <button id="new-question" onclick="generateProblem()">
+        New Question!
+      </button>
+      <input type="number" id="ans" placeholder="Answer" />
+      <button id="submit" onclick="handleSubmit()">Submit!</button>
+      <h4 id="tell"></h4>
+      <p id="streak"></p>
+      <div id="flip"></div>
+    </div>
+    <i class="fa-solid fa-person-skating" id="skateLeft" class="animated"></i>
+    <i class="fa-solid fa-person-skating" id="skateRight"></i>
+    <script src="script.js"></script>
+  </body>
+</html>
